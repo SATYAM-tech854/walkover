@@ -10,113 +10,102 @@ body {
 }
 
 :root {
-    --orange:#FE904C;
-    --teal:#57D5DA;
+    --orange: #FE904C;
+    --teal: #57D5DA;
     --white: #ffffff;
     --green: green;
-    
+
 }
 
-/************* Index *************/
-.info {
-    padding: 20px;
-    text-align: center;
-}
-
-.white {
-    background-color: var(--white);
-    height: 1200px;
-    box-sizing: border-box;
-}
-
-/* Box 1 */
-.box1 .orange {
-    background-color: var(--orange);
+.outerBox {
+    height: 600px;
     width: 100%;
-    height: 100%;
-}
-
-.box1 .teal {
-    box-sizing: border-box;
-    background-color: var(--teal);
-    width: calc(50% - 2em);
-    height: 97%;
-    margin: 1em;
-    display: flex;
-    float: left;
-}
-
-@media (max-width:768px) {
-    .box1 .teal {
-        width: calc(100% - 2em);
-        height: 47%;
-    }
-}
-
-/* Box 2 */
-
-.box2 .orange {
-    background-color: var(--orange);
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    float: left;
-    clear: none; 
-}
-
-.box2 .teal {
-    box-sizing: border-box;
-    background-color: var(--teal);
-    width: 94%;
-    margin: auto;
-    height: 573px;
-    padding: 2em;
-    overflow-y: auto;
-}
-
-@media (max-width:768px){
-    .box2 .orange {
-        padding: 1.5em;
-    }
-}
-
-/* Box 3 */
-.box3 .orange {
-    background-color: var(--orange);
-    width: 100%;
-    height: 100%;
+    background-color: orange;
     position: relative;
 }
 
-.box3 .teal {
-    background-color: var(--teal);
-    width: 40%;
-    height: 46.5%;
-}
-
-.box3 .teal.t1 {
+.outerBox .innerBox-1 {
     position: absolute;
+    background-color: teal;
+    height: 270px;
+    width: 90%;
     top: 0;
     left: 0;
 }
 
-.box3 .teal.t2 {
+.outerBox .innerBox-2 {
     position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.box3 .teal.t3 {
-    position: absolute;
+    background-color: teal;
+    height: 270px;
+    width: 90%;
     bottom: 0;
     left: 0;
 }
 
-.box3 .teal.t4 {
+.outerBox .innerBox-3 {
     position: absolute;
+    background-color: teal;
+    height: 200px;
+    width: 43%;
+    top: 30px;
+    left: 30px;
+}
+
+.outerBox .innerBox-4 {
+    position: absolute;
+    background-color: teal;
+    height: 200px;
+    width: 43%;
+    top: 30px;
+    right: 30px;
+}
+
+.outerBox .innerBox-5 {
+    position: absolute;
+    background-color: teal;
+    height: 300px;
+    width: 93%;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.outerBox .innerBox-6 {
+    position: absolute;
+    background-color: teal;
+    height: 250px;
+    width: 43%;
+    top: 42px;
+    left: 30px;
+}
+
+.outerBox .innerBox-9 {
+    position: absolute;
+    background-color: teal;
+    height: 250px;
+    width: 43%;
+    bottom: 42px;
+    right: 30px;
+}
+
+.outerBox .innerBox-7 {
+    position: absolute;
+    background-color: teal;
+    height: 270px;
+    width: 45%;
     bottom: 0;
+    left: 0;
+}
+
+.outerBox .innerBox-8 {
+    position: absolute;
+    background-color: teal;
+    height: 270px;
+    width: 45%;
+    top: 0;
     right: 0;
 }
+
 
 @media (max-width:768px) {
     .box3 .teal {
@@ -133,7 +122,7 @@ body {
     bottom: 0;
 }
 
-.green a{
+.green a {
     padding: 10px;
     color: var(--white);
     text-decoration: none;
